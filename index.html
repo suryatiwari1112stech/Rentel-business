@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Available Rooms</h1>
+
+<div class="grid">
+
+{% for room in rooms %}
+
+<div class="card">
+
+<h3>{{room.title}}</h3>
+
+<p><b>Location:</b> {{room.location}}</p>
+
+<p><b>Price:</b> ₹{{room.price}}</p>
+
+<a href="/room/{{room.id}}" class="btn">View Details</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

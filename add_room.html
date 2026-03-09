@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Add New Room</h2>
+
+<form method="POST">
+
+<label>Room Title</label>
+<input name="title" required>
+
+<label>Price</label>
+<input name="price" required>
+
+<label>Location</label>
+<input name="location" required>
+
+<label>Description</label>
+<textarea name="description"></textarea>
+
+<button class="btn">Add Room</button>
+
+</form>
+
+{% endblock %}
