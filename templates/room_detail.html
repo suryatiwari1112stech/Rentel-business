@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+
+<h2>{{room.title}}</h2>
+
+<p><b>Location:</b> {{room.location}}</p>
+
+<p><b>Price:</b> ₹{{room.price}}</p>
+
+<p>{{room.description}}</p>
+
+</div>
+
+{% endblock %}
